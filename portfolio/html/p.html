@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umair's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/portfolio/css/p.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="main">
+
+    <nav class="navbar h-nav-resp">
+        <div id="logonav" class="logo-div">Umair's Portfolio</div>
+        <ul class="nav-list v-class-resp">
+          <a href="/portfolio/html/index.html"><i class="fa">&#xf186;</i></a>    
+          <li class="mag"><a id="navlink" href="#">Home</a></li>
+          <li class="mag"><a id="navlink" href="#Skills">Skills</a></li>
+          <li class="mag"><a id="navlink" href="#projects">Projects</a></li>
+          <li class="mag"><a id="navlink" href="/portfolio/html/form.html">Contact Me</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </nav>
+
+    <div class="home-div">
+        <div class="left-div">
+          <h1>
+            Hi, <br />
+            My Self <span class="magnet" id="amm">Umair</span> <br />
+          </h1>
+          <span id="element"></span><br /><br />
+        </div>
+        <div class="right-div">
+          <img id="devimg" class="dev-img" src="/portfolio/images/dev.png" alt="" />
+        </div>
+      </div>
+
+
+      <section id="Skills" class="sec-2"> 
+        <div  class="heading-container">
+            <h1 class="heading">Technical Skills</h1>
+        </div>
+        <div id="sec2" class="container">
+            <div class="skill" onclick="toggleSkill('html')">
+                <h2><i class="html-icon fab fa-html5"></i>/<i class="css-icon fa-brands fa-css3"></i> HTML/CSS</h2>
+                <div class="details" id="html-details">
+                    <p>I am proficient in creating well-structured, semantically correct HTML documents.</p>
+                    <p class="expand-button" onclick="toggleExpand('html')">Click to learn more</p>
+                </div>
+            </div>
+            <div class="skill" onclick="toggleSkill('css')">
+                <h2><i class="js-icon fa-brands fa-js"></i>/<i class="react-icon fa-brands fa-react"></i> JavaScript/React</h2>
+                <div class="details" id="css-details">
+                    <p>I have strong CSS skills for styling web pages and creating responsive designs.</p>
+                    <p class="expand-button" onclick="toggleExpand('css')">Click to learn more</p>
+                </div>
+            </div>
+            <div class="skill" onclick="toggleSkill('js')">
+                <h2><i class="git-icon fa-brands fa-github"></i>Github</h2>
+                <div class="details" id="js-details">
+                    <p>I can develop interactive and dynamic web applications using JavaScript.</p>
+                    <p class="expand-button" onclick="toggleExpand('js')">Click to learn more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="projects" class="portfolio">
+        <div class="container-pro">
+          <h1 class="title">Major Projects</h1>
+          <div class="projects-list">
+            <div class="project">
+              <img src="https://static-xf1.vietnix.vn/wp-content/uploads/2022/08/amazon-1024x1024.webp" alt="" />
+              <div class="layer">
+                <h3>Amazon Clone</h3>
+                <p>
+                  <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eaque, recusandae ipsa nemo, molestias eum est reiciendis cupiditate quis optio quae ab cumque maiores odit commodi libero et provident sed. -->
+                </p><br>
+                <a href="/amazon/amaz.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="https://www.spacex.com/static/images/share.jpg" alt="" />
+              <div class="layer">
+                <h3>Future project</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quae ipsum eius, porro corrupti aliquam voluptatibus facilis laborum commodi harum excepturi vitae autem quasi maxime ab at ea quibusdam reprehenderit!
+                </p><br>
+                <a href="https://www.spacex.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="https://futurecfo.net/wp-content/uploads/2021/03/joshua-sortino-LqKhnDzSF-8-unsplash-scaled.jpg" alt="" />
+              <div class="layer">
+                <h3>Data Wide Clone</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sit officiis quos vero eveniet a eligendi, maxime fugit vel dolore, dolorem magni quas animi voluptatem itaque ex distinctio, voluptates eaque!
+                </p><br>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <footer>
+     <div class="copyright">
+        © 2023 www.Umair's Portfolio.com. All rights reserved.
+     </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+          strings: [
+            "Web Devoloper"
+          ],
+          typeSpeed: 50,
+          backSpeed: 30,
+          startDelay: 500,
+          loop: true,
+          showCursor: false,
+        });
+      </script>
+
+    <script>
+        function toggleSkill(skill) {
+            const details = document.getElementById(`${skill}-details`);
+            const isVisible = window.getComputedStyle(details).display !== 'none';
+
+            if (isVisible) {
+                details.style.display = 'none';
+            } else {
+                details.style.display = 'block';
+                details.style.animation = 'fade-in 0.5s';
+            }
+        }
+
+        function toggleExpand(skill) {
+            const content = document.getElementById(`${skill}-details`);
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+    <script src="/portfolio/javascript/script.js"></script>
+</body>
+</html>
